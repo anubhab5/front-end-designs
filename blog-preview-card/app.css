@@ -1,0 +1,93 @@
+:root {
+  /* Primary Color */
+  --Yellow: hsl(47, 88%, 63%);
+
+  /* Neutral Color */
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: figtree;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: figtree;
+}
+
+.card {
+  border: solid 1px var(--Black);
+  height: 450px;
+  width: 357px;
+  border-radius: 1rem;
+  box-shadow: 8px 8px var(--Black);
+  background-color: var(--White);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+
+.image-container img {
+  border-radius: 16px;
+  width: 98%;
+}
+
+.heading {
+  margin: 0 1.5rem;
+  h5 {
+    color: var(--Black);
+    display: inline-block;
+    background-color: var(--Yellow);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 800;
+  }
+}
+
+.publish-date {
+  margin: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.topic {
+  margin: 1rem 1.5rem;
+  font-weight: 900;
+}
+
+.content {
+  margin: 1rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.author {
+  margin: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+
+  .avatar {
+    height: 28px;
+    margin-right: 0.6rem;
+  }
+
+  .author-name {
+    font-size: small;
+    font-weight: 900;
+  }
+}
